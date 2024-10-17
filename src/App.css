@@ -1,0 +1,38 @@
+.app-container {
+  display: flex; /* Flexbox layout */
+}
+
+.sidebar {
+  position: fixed; /* Fix the sidebar in place */
+  top: 0;
+  left: 0;
+  width: 250px; /* Set a width for the sidebar */
+  height: 100%; /* Full height */
+  background-color: #FFFFFF; /* Dark background */
+  color: #5B5B5B; /* White text color */
+  padding: 20px; /* Padding around content */
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for effect */
+}
+
+.content-container {
+  margin-left: 250px; /* Leave space for the sidebar */
+  flex: 1; /* Take up the remaining space */
+}
+
+.navbar {
+  background-color: #ffffff; /* Navbar background color */
+  color: #3E4954; /* Navbar text color */
+  padding: 10px 20px; /* Padding around navbar items */
+  display: flex; /* Flex layout for navbar items */
+  align-items: center; /* Center align items */
+  justify-content: space-between; /* Space items evenly */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for effect */
+}
+
+.main-content {
+  padding: 20px; /* Padding around the main content */
+  background-color: #f8f9fa; /* Light background for content */
+  height: calc(100vh - 60px); /* Full height minus navbar height */
+  overflow-y: auto; /* Enable scrolling for overflow */
+}
